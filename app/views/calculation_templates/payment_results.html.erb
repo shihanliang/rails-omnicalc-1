@@ -1,0 +1,9 @@
+<h1>Results</h1>
+
+<p>APR: <%= (@apr).round(4) %>%</p>
+
+<p>Number of years: <%= @years %></p>
+
+<p>Principal: <%= @principal.to_fs(:currency) %></p>
+
+<p>Your monthly payment is <%= @monthly_payment.round(2).to_fs(:currency) %></p>
